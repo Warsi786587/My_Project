@@ -74,7 +74,7 @@ Most buyers hesitate to purchase a used car because they don't know the **fair m
    - Strong bias towards budget cars (98% recall) → Business recommendations
 
   **Target Variable Graph**
-   - ![Price Histogram](https://raw.githubusercontent.com/Warsi786857/My_Project/main/images/C:/Users/Warsi/Desktop/Regression & Classification/price_histogram.png)
+   - https://github.com/Warsi786587/My_Project/commit/f460e0bc1410252505ef7e9a65c7658391250e9e
 
 
      C:\Users\Warsi\Desktop\Regression & Classification
