@@ -97,6 +97,11 @@ Most buyers hesitate to purchase a used car because they don't know the **fair m
 
 - <img width="924" height="673" alt="image" src="https://github.com/user-attachments/assets/4cb92be1-0992-4bfb-9565-29b7333147bb" />
 
+**Classification Important Features**
+
+- <img width="1048" height="668" alt="image" src="https://github.com/user-attachments/assets/c9891e73-4882-48ff-8f01-0761e5d0e9e1" />
+
+
 
 
 
