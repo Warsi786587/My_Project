@@ -1,23 +1,4 @@
 
-**t**
-
-      https://raw.githubusercontent.com/Warsi786587/My_Project/f8aa94c38278ed86cfc3f844bc5a13bc5fdc82b0/Car..jpg     
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 # Used_Car_Price_Predictions 
 
@@ -53,6 +34,14 @@ Most buyers hesitate to purchase a used car because they don't know the **fair m
 - Seats: Number (int)
 - New_Price: New price (Lakhs, float)
 - **Price**: Target - Used price (Lakhs, float)
+
+  **Tech Stack**
+- **Language**: Python 3
+- **Data Handling**: pandas, numpy
+- **Visualization**: matplotlib, seaborn
+- **Machine Learning**:
+  - scikit-learn (LinearRegression, LogisticRegression, DecisionTreeClassifier, GridSearchCV, StandardScaler, train_test_split, metrics)
+  - LinearDiscriminantAnalysis (from sklearn.discriminant_analysis)
 
 ## Project Workflow
 
@@ -91,6 +80,30 @@ Most buyers hesitate to purchase a used car because they don't know the **fair m
 8. **Feature Importance & Business Insights**  
    - Top features impacting price  
    - Strong bias towards budget cars (98% recall) → Business recommendations
+
+     
+  
+   ## Key Results
+
+**Regression Performance** (Price Prediction)  
+Best Model: **Random Forest Regressor**  
+- Train RMSE: 2.58 Lakhs  
+- Test RMSE: **4.99 Lakhs** (lowest among all)  
+- Train R²: 0.945  
+- Test R²: **0.821** (highest generalization)
+
+**Tuned Decision Tree** also strong with Test R² 0.811
+
+**Classification Performance** (Budget <10L vs ≥10L)  
+Best Overall: Tuned Decision Tree / Random Forest  
+- Train Accuracy: ~80–81%  
+- Test Accuracy: ~67–75%  
+- **Budget Cars (<10L)** Recall: **98%** (almost never misses a cheap car!)  
+- Precision: 76%  
+- Strong majority class bias → Excellent for budget segment detection
+
+**Verdict**: Model performs very well on regression (R² 0.82) and excels in catching budget cars (98% recall) – perfect for real-world used car tools in India!
+
 
   **Target Variable Graph**
   
