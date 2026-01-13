@@ -95,7 +95,8 @@ Most buyers hesitate to purchase a used car because they don't know the **fair m
 
 **Features Important in Regression**
 
-- <img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/fedebd18-6c80-481e-8461-dfe245f03951" />
+- <img width="924" height="673" alt="image" src="https://github.com/user-attachments/assets/4cb92be1-0992-4bfb-9565-29b7333147bb" />
+
 
 
 
