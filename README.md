@@ -83,8 +83,11 @@ Most buyers hesitate to purchase a used car because they don't know the **fair m
 
    **Count Plot of Model**
 
-   <img width="564" height="596" alt="image" src="https://github.com/user-attachments/assets/45e469c1-9d98-400d-889f-120bab4f6076" />
+   - <img width="564" height="596" alt="image" src="https://github.com/user-attachments/assets/45e469c1-9d98-400d-889f-120bab4f6076" />
 
+   **Car_Age**
+
+   - <img width="1115" height="625" alt="image" src="https://github.com/user-attachments/assets/d93db5ef-9e56-4db0-bc62-b29d17274c53" />
 
 
 
