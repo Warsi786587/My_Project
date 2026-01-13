@@ -75,7 +75,8 @@ Most buyers hesitate to purchase a used car because they don't know the **fair m
 
   **Target Variable Graph**
   
-   - price_histogram.png
+   - <img width="3600" height="2100" alt="image" src="https://github.com/user-attachments/assets/56c406f7-ce4e-460c-8264-c22ec5b4a67d" />
+
 
 
 
