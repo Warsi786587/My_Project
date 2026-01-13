@@ -1,5 +1,7 @@
 # My_Project
-# Used Car Price Predictions 
+
+# Used_Car_Price_Predictions 
+
 **Accurate used car price prediction in India + Powerful tool for identifying budget-friendly cars (<10 lakh)**  
 
 ## Problem Statement
@@ -7,10 +9,12 @@
 The used car market in India is growing rapidly. While new car sales have slowed down in recent years, the pre-owned car market has continued to expand and is now larger than the new car market.  
 For example, in 2018-19, around 3.6 million new cars were sold, while approximately 4 million second-hand cars were bought and sold.
 
-**Biggest Challenge**:  
+**Biggest Challenge**: 
+
 Most buyers hesitate to purchase a used car because they don't know the **fair market price**.
 
 **Project Goal**:  
+
 - Build a Machine Learning model to **accurately predict the selling price** of used cars  
 - Compare different regression models and select the best one  
 - Use real Indian market data (various brands, locations, features) to make reliable predictions  
@@ -70,7 +74,7 @@ Most buyers hesitate to purchase a used car because they don't know the **fair m
    - Strong bias towards budget cars (98% recall) → Business recommendations
 
   **Target Variable Graph**
-   - ![Price Histogram](https://raw.githubusercontent.com/Warsi_786857/My_Project/main/images/C:/Users/Warsi/Desktop/Regression & Classification/price_histogram.png)
+   - ![Price Histogram](https://raw.githubusercontent.com/Warsi786857/My_Project/main/images/C:/Users/Warsi/Desktop/Regression & Classification/price_histogram.png)
 
 
      
