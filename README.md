@@ -89,6 +89,9 @@ Most buyers hesitate to purchase a used car because they don't know the **fair m
 
    - <img width="1115" height="625" alt="image" src="https://github.com/user-attachments/assets/d93db5ef-9e56-4db0-bc62-b29d17274c53" />
 
+**Correlations Map**
+
+- <img width="1051" height="607" alt="image" src="https://github.com/user-attachments/assets/4886720a-2f0d-42ef-8384-5ea83e0214e3" />
 
 
 
