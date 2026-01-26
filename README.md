@@ -97,7 +97,7 @@ Strong regression performance (R² 0.82) for accurate pricing + reliable budget 
 
 **Classification Important Features**
 
-- <img width="1048" height="668" alt="image" src="https://github.com/user-attachments/assets/c9891e73-4882-48ff-8f01-0761e5d0e9e1" />
+
 
 
 
