@@ -97,6 +97,9 @@ Strong regression performance (R² 0.82) for accurate pricing + reliable budget 
 
 <img width="999" height="648" alt="image" src="https://github.com/user-attachments/assets/30fcb5e8-b549-420e-a963-a7fbc92b050c" />
 
+**Confusion Matrix**
+
+<img width="520" height="450" alt="image" src="https://github.com/user-attachments/assets/12510e28-7f4d-42aa-95ac-16c5bbff86e9" />
 
 
 
