@@ -70,37 +70,32 @@ Most buyers hesitate to purchase a used car because they don't know the **fair m
      - Random Forest Regressor  
      - Grid Search CV for hyperparameter tuning  
    - **Classification** (Budget <10L vs Premium ≥10L):  
-     - Same models as classifiers  
+     - Logistic Regression & Tuned Logistic Regression 
      - Precision, Recall, F1-Score, ROC-AUC Curve  
 
 7. **Model Evaluation & Comparison**  
    - Regression: R², MAE, RMSE  
    - Classification: Confusion Matrix, ROC Curve, Feature Importance  
 
-8. **Feature Importance & Business Insights**  
-   - Top features impacting price  
-   - Strong bias towards budget cars (98% recall) → Business recommendations
+8. **Feature Importance & Business Insights**
+  
+-  Top price drivers (Random Forest): Power (engine performance), Car Age, and Kilometers Driven dominate → buyers prioritize power and low depreciation/usage in the Indian market.  
+-  Tuned Logistic Regression shows strong budget car detection (high recall on <10L segment) → ideal for platforms to quickly surface affordable options and target price-sensitive buyers effectively.
+
+
 
      
   
    ## Key Results
 
-**Regression Performance** (Price Prediction)  
-Best Model: **Random Forest Regressor**  
-- Train RMSE: 2.58 Lakhs  
-- Test RMSE: **4.99 Lakhs** (lowest among all)  
-- Train R²: 0.945  
-- Test R²: **0.821** (highest generalization)
+"Developed an end-to-end Used Car Price Prediction & Classification system using Indian market data.  
+**Regression:** Random Forest achieved Test R² = 0.821 and RMSE = 4.99 Lakhs — Power, Car Age, and Kilometers Driven are the top value drivers.  
 
-**Tuned Decision Tree** also strong with Test R² 0.811
+**Classification:** Tuned Logistic Regression delivers 60% accuracy with 52% Recall on budget cars (<10L) — ideal for affordable segment targeting.
 
-**Classification Performance** (Budget <10L vs ≥10L)  
-Best Overall: Tuned Logistic Regression   
-- Train Accuracy: ~60%  
-- Test Accuracy: ~60%  
-- **Budget Cars (<10L)** Recall: **52%** (almost never misses a cheap car!)  
-- Precision: 30%  
-- Strong majority class bias → Excellent for budget segment detection
+**Tech Stack:** Python, Scikit-learn, Pandas, GridSearchCV, Feature Engineering & Encoding.
+Project demonstrates strong ML skills in regression, classification, hyperparameter tuning, and interpretability (feature importance analysis). Ready for deployment in automotive marketplaces."
+
 
 **Verdict**: Model performs very well on regression (R² 0.82) and excels in catching budget cars (52% recall) – perfect for real-world used car tools in India!
 
