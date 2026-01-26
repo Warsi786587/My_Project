@@ -87,9 +87,10 @@ Strong regression performance (R² 0.82) for accurate pricing + reliable budget 
 
    - <img width="1115" height="625" alt="image" src="https://github.com/user-attachments/assets/d93db5ef-9e56-4db0-bc62-b29d17274c53" />
 
-**Correlations Map**
+**Actual vs Prediction Graph**
 
-- <img width="1051" height="607" alt="image" src="https://github.com/user-attachments/assets/4886720a-2f0d-42ef-8384-5ea83e0214e3" />
+- <img width="462" height="387" alt="image" src="https://github.com/user-attachments/assets/3c47a404-56aa-4472-96b1-8248a1bd8a87" />
+
 
 **Features Important in Regression**
 
