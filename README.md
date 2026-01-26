@@ -1,103 +1,74 @@
 
 
-# Used_Car_Price_Predictions 
+# Used Car Price Prediction & Budget Classification (India Market)
 
-**Accurate used car price prediction in India + Powerful tool for identifying budget-friendly cars (<10 lakh)**  
+**Accurate used car price prediction in India + Powerful tool for identifying budget-friendly cars (<10 lakh)**
 
 ## Problem Statement
 
-The used car market in India is growing rapidly. While new car sales have slowed down in recent years, the pre-owned car market has continued to expand and is now larger than the new car market.  
-For example, in 2018-19, around 3.6 million new cars were sold, while approximately 4 million second-hand cars were bought and sold.
+"In recent years (2024-2025), India's used car market has surpassed new car sales, with pre-owned vehicles reaching ~5.9 million units in FY25 compared to ~4.3 million new passenger vehicles (sources: Volkswagen Indian Blue Book Report FY'25, CARS24)."
 
-**Biggest Challenge**: 
 
-Most buyers hesitate to purchase a used car because they don't know the **fair market price**.
+Most buyers hesitate due to uncertainty about the **fair market price**.
 
 **Project Goal**:  
+- Build ML models to **accurately predict used car selling price** (in Lakhs)  
+- Compare regression models and select the best  
+- Use real Indian market data for reliable predictions  
+- Special focus: Effectively identify **budget cars (<10 lakh)** for price-sensitive buyers
 
-- Build a Machine Learning model to **accurately predict the selling price** of used cars  
-- Compare different regression models and select the best one  
-- Use real Indian market data (various brands, locations, features) to make reliable predictions  
-- Special focus: Effectively identify and highlight **budget-friendly cars (<10 lakh)**
+## Data Dictionary (Key Features)
+- Name: Brand & Model  
+- Location: City  
+- Year → CarAge (derived)  
+- Kilometers_Driven  
+- Fuel_Type: Petrol/Diesel/CNG  
+- Transmission: Manual/Auto  
+- Owner_Type: First/Second/Third  
+- Mileage, Engine (cc), Power (bhp)  
+- Seats  
+- Price: Target (Lakhs, float)
 
-  **Data Dictionary (Compact)**:
-- Name: Brand & Model (String)
-- Location: City (String)
-- Year: Manufacturing Year (int)
-- Kms_Driven: Total KM (int)
-- Fuel_Type: Petrol/Diesel/CNG (str)
-- Transmission: Manual/Auto (str)
-- Owner_Type: First/Second/Third (str)
-- Mileage: kmpl/kmkg (float)
-- Engine: cc (float)
-- Power: bhp (float)
-- Seats: Number (int)
-- New_Price: New price (Lakhs, float)
-- **Price**: Target - Used price (Lakhs, float)
-
-  **Tech Stack**
-- **Language**: Python 3
-- **Data Handling**: pandas, numpy
-- **Visualization**: matplotlib, seaborn
-- **Machine Learning**:
-  - scikit-learn (LinearRegression, LogisticRegression, DecisionTreeClassifier, GridSearchCV, StandardScaler, train_test_split, metrics)
-  - LinearDiscriminantAnalysis (from sklearn.discriminant_analysis)
+## Tech Stack
+- Python 3  
+- pandas, numpy  
+- matplotlib, seaborn  
+- scikit-learn (LinearRegression, RandomForestRegressor, LogisticRegression, GridSearchCV, metrics)  
 
 ## Project Workflow
+1. Data Loading & Cleaning  
+2. EDA (distributions, correlations, trends)  
+3. Outlier Handling (IQR/boxplot capping)  
+4. Missing Value Imputation  
+5. Feature Engineering & Encoding (One-Hot/Label)  
+6. Model Building:  
+   - Regression: Linear, Decision Tree, Random Forest + Tuning  
+   - Classification: Tuned Logistic Regression (Budget <10L vs ≥10L)  
+7. Evaluation & Interpretability  
 
-1. **Data Loading & Cleaning**  
-   - Raw data import  
-   - Initial inspection & data type corrections  
+## Key Results
 
-2. **Exploratory Data Analysis (EDA)**  
-   - Distribution analysis, correlations, trends by brand/location/fuel etc.  
+**Regression (Price Prediction):**  
+Best Model: **Random Forest Regressor**  
+- Test R²: **0.821** (explains ~82% variance)  
+- Test RMSE: **4.99 Lakhs** (average error ~₹5 lakhs)  
+- Top features: Power (bhp), CarAge, Kilometers_Driven → Indian buyers prioritize performance, low age, and low usage.
 
-3. **Outlier Detection & Handling**  
-   - Identification using IQR / boxplots  
-   - Capping or removal of extreme values  
+**Classification (Budget <10L vs ≥10L):**  
+Best Model: **Tuned Logistic Regression** (GridSearchCV: L1 penalty, C=10)  
+- Test Accuracy: **~60%** (strong given ~76% premium class imbalance)  
+- Recall on Budget cars (<10L): **52%** → Rarely misses affordable options  
+- Ideal for recommendation engines to highlight budget-friendly cars.
 
-4. **Missing Value Treatment**  
-   - Imputation (median/mean/mode) or removal  
+**Feature Importance & Business Insights**  
+- **Top price drivers** (Random Forest): Power, Car Age, Kilometers Driven dominate → buyers in India focus on engine performance and low depreciation/usage.  
+- Tuned Logistic Regression excels in **budget car detection** (high recall on <10L segment) → perfect for platforms to quickly surface affordable options and target price-sensitive buyers.
 
-5. **Feature Encoding**  
-   - One-Hot Encoding for categorical variables  
-   - Label Encoding where needed  
+**Verdict**:  
+Strong regression performance (R² 0.82) for accurate pricing + reliable budget detection (52% recall on minority class) – ready for real-world use in Indian automotive marketplaces, dealerships, or apps like Cars24/OLX.
 
-6. **Model Building & Training**  
-   - **Regression** (for continuous price prediction):  
-     - Linear Regression  
-     - Decision Tree Regressor  
-     - Random Forest Regressor  
-     - Grid Search CV for hyperparameter tuning  
-   - **Classification** (Budget <10L vs Premium ≥10L):  
-     - Logistic Regression & Tuned Logistic Regression 
-     - Precision, Recall, F1-Score, ROC-AUC Curve  
+**Tech Demonstrated**: Feature engineering, hyperparameter tuning, imbalance handling, model interpretability.
 
-7. **Model Evaluation & Comparison**  
-   - Regression: R², MAE, RMSE  
-   - Classification: Confusion Matrix, ROC Curve, Feature Importance  
-
-8. **Feature Importance & Business Insights**
-  
--  Top price drivers (Random Forest): Power (engine performance), Car Age, and Kilometers Driven dominate → buyers prioritize power and low depreciation/usage in the Indian market.  
--  Tuned Logistic Regression shows strong budget car detection (high recall on <10L segment) → ideal for platforms to quickly surface affordable options and target price-sensitive buyers effectively.
-
-
-
-     
-  
-   ## Key Results
-
-"Developed an end-to-end Used Car Price Prediction & Classification system using Indian market data.  
-**Regression:** Random Forest achieved Test R² = 0.821 and RMSE = 4.99 Lakhs — Power, Car Age, and Kilometers Driven are the top value drivers.  
-
-**Classification:** Tuned Logistic Regression delivers 60% accuracy with 52% Recall on budget cars (<10L) — ideal for affordable segment targeting.
-
-**Tech Stack:** Python, Scikit-learn, Pandas, GridSearchCV, Feature Engineering & Encoding.
-Project demonstrates strong ML skills in regression, classification, hyperparameter tuning, and interpretability (feature importance analysis). Ready for deployment in automotive marketplaces."
-
-
-**Verdict**: Model performs very well on regression (R² 0.82) and excels in catching budget cars (52% recall) – perfect for real-world used car tools in India!
 
 
   **Target Variable Graph**
