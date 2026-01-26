@@ -1,4 +1,5 @@
-![Uploading image.png…]()
+<img width="2560" height="1600" alt="image" src="https://github.com/user-attachments/assets/e84585d8-0fab-4a9e-8ad9-607743ba33b2" />
+
 
 
 # Used Car Price Prediction & Budget Classification 
