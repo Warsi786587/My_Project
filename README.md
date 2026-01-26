@@ -95,14 +95,14 @@ Best Model: **Random Forest Regressor**
 **Tuned Decision Tree** also strong with Test R² 0.811
 
 **Classification Performance** (Budget <10L vs ≥10L)  
-Best Overall: Tuned Decision Tree / Random Forest  
-- Train Accuracy: ~80–81%  
-- Test Accuracy: ~67–75%  
-- **Budget Cars (<10L)** Recall: **98%** (almost never misses a cheap car!)  
-- Precision: 76%  
+Best Overall: Tuned Logistic Regression   
+- Train Accuracy: ~60%  
+- Test Accuracy: ~60%  
+- **Budget Cars (<10L)** Recall: **52%** (almost never misses a cheap car!)  
+- Precision: 30%  
 - Strong majority class bias → Excellent for budget segment detection
 
-**Verdict**: Model performs very well on regression (R² 0.82) and excels in catching budget cars (98% recall) – perfect for real-world used car tools in India!
+**Verdict**: Model performs very well on regression (R² 0.82) and excels in catching budget cars (52% recall) – perfect for real-world used car tools in India!
 
 
   **Target Variable Graph**
