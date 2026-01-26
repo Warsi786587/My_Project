@@ -1,6 +1,6 @@
 
 
-# Used Car Price Prediction & Budget Classification (India Market)
+# Used Car Price Prediction & Budget Classification 
 
 **Accurate used car price prediction in India + Powerful tool for identifying budget-friendly cars (<10 lakh)**
 
